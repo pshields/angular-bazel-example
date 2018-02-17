@@ -6,6 +6,7 @@ ng_module(
     name = "src",
     srcs = glob(["*.ts"]),
     tsconfig = ":tsconfig.json",
+    assets = ["//src/hello-world:assets"],
     deps = ["//src/hello-world"],
 )
 
