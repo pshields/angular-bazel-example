@@ -41,3 +41,11 @@ ts_web_test(
         "//:angular_test_bundles",
     ],
 )
+
+filegroup(
+    name = "assets",
+    srcs = [
+      ":hello-world-styles",
+      "hello-world.component.html"
+    ]
+)
