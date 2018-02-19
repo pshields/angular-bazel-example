@@ -1,11 +1,13 @@
 package(default_visibility = ["//visibility:public"])
 
-load("@build_bazel_rules_typescript//:defs.bzl", "ts_library")
+load("@angular//:index.bzl", "ng_module")
 load("@io_bazel_rules_sass//sass:sass.bzl", "sass_binary")
 
-ts_library(
+ng_module(
     name = "component_a",
-    srcs = glob(['*.ts'])
+    assets = [":assets"],
+    srcs = glob(['*.ts']),
+    deps = ["@rxjs"],
 )
 
 sass_binary(

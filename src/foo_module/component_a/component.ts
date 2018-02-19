@@ -4,6 +4,6 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'component-a',
   templateUrl: './component.html',
-  styleUrls: ['./component.scss'],
+  styleUrls: ['./styles.css'],
 })
 export class ComponentA {}
